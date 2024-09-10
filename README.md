@@ -53,6 +53,25 @@ graph TD
     G --> J[Leaderboard Service]
 ```
 
+```mermaid
+
+graph TD
+    A[User Login] --> B[Select Workout]
+    B --> C[AI Pose Estimation]
+    C --> D[Real-time Correction]
+    D --> E[Rep Counting]
+    E --> F{Workout Complete?}
+    F -->|No| C
+    F -->|Yes| G[Save Progress]
+    G --> H[Update Leaderboard]
+    H --> I[Share & Compare]
+    I --> J[Rewards & Challenges]
+    J --> B
+
+```
+
+
+
 ## FEASIBILITY AND VIABILITY
 
 Feasibility:
